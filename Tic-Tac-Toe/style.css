@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #548687;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+p {
+    height: 10vmin;
+    background-color: rgb(211, 201, 201);
+    border-radius: 10px;
+    border: none;
+    margin: 5vmin auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #333;
+}
+
+h1 {
+    height: 10vmin;
+    border-radius: 10px;
+    border: none;
+    margin: 5vmin auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Test Banner Ad styling */
+.ad-banner {
+    position: relative;
+    background: #ffffff;
+    color: #333;
+    font-size: 2.5vmin;
+    gap: 1vmin;
+    padding: 0.8rem 1.2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3vmin auto;
+    border-radius: 10px;
+    min-width: 40vmin;
+}
+
+.ad-label {
+    background: #ff9800;
+    color: #fff;
+    padding: 0.4vmin 1vmin;
+    border-radius: 4px;
+    font-size: 2vmin;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 1vmin;
+}
+
+.ad-text {
+    font-weight: 600;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+    position: relative;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+    background-color: #ffffc7;
+    color: #b0413e;
+    cursor: pointer;
+}
+
+.box:hover {
+    transform: scale(1.03);
+}
+
+#reset-btn,
+#new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#reset-btn:hover,
+#new-btn:hover {
+    background-color: #33332a;
+    transform: scale(1.05);
+}
+
+#msg {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+}
+
+.hide {
+    display: none;
+}
+
+.game {
+    position: relative;
+}
+
+.winning-line {
+    position: absolute;
+    height: 5px;
+    background-color: green;
+    border-radius: 5px;
+    z-index: 10;
+    transform-origin: left center;
+    animation: drawLine 0.5s ease forwards;
+}
+
+@keyframes drawLine {
+    from {
+        width: 3px;
+    }
+
+    to {
+        width: 100%;
+    }
+}
